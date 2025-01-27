@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -13,21 +14,30 @@
 
         // This is a sample keymap intended to be replaced with your own
 
-        base_layer {
+        Base {
             bindings = <
-&kp Q  &kp W  &kp F  &kp P  &kp B                              &kp J          &kp L  &kp U      &kp Y    &kp SEMI
-&kp A  &kp R  &kp S  &kp T  &kp G                              &kp M          &kp N  &kp E      &kp I    &kp O
-&kp Z  &kp X  &kp C  &kp D  &kp V                              &kp K          &kp H  &kp COMMA  &kp DOT  &kp FSLH
-                            &lt 1 TAB  &kp SPACE    &kp ENTER  &kp BACKSPACE
+&kp Q  &kp W  &kp F  &kp P  &kp B                                   &kp J          &kp L  &kp U      &kp Y    &kp SEMI
+&kp A  &kp R  &kp S  &kp T  &kp G                                   &kp M          &kp N  &kp E      &kp I    &kp O
+&kp Z  &kp X  &kp C  &kp D  &kp V                                   &kp K          &kp H  &kp COMMA  &kp DOT  &kp FSLH
+                            &lt 1 TAB  &kp SPACE    &lt 2 KP_ENTER  &kp BACKSPACE
             >;
         };
 
-        layer_1 {
+        Numbers {
             bindings = <
-&kp ESC   &kp F7  &kp F8  &kp F9  &kp F12                    &kp LS(UNDER)  &kp N7  &kp N8  &kp N9  &kp ESC
-&kp LGUI  &kp F4  &kp F5  &kp F6  &kp F11                    &kp N0         &kp N4  &kp N5  &kp N6  &kp LGUI
-&kp CAPS  &kp F1  &kp F2  &kp F3  &kp F10                    &kp MINUS      &kp N1  &kp N2  &kp N3  &kp CAPS
+&kp ESC   &kp F7  &kp F8  &kp F9  &kp F12                    &kp LS(UNDER)  &kp N7  &kp N8  &kp N9  &bt BT_NXT
+&kp LGUI  &kp F4  &kp F5  &kp F6  &kp F11                    &kp N0         &kp N4  &kp N5  &kp N6  &bt BT_PRV
+&kp CAPS  &kp F1  &kp F2  &kp F3  &kp F10                    &kp MINUS      &kp N1  &kp N2  &kp N3  &bt BT_CLR_ALL
                                   &trans   &trans    &trans  &trans
+            >;
+        };
+
+        Symbols {
+            bindings = <
+&kp LS(EXCL)   &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)                    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)
+&kp LS(TILDE)  &kp GRAVE   &kp LS(DQT)    &kp BSLH      &trans                           &trans         &kp LS(PIPE)  &kp LS(PLUS)  &kp MINUS     &kp LS(QMARK)
+&trans         &trans      &trans         &trans        &trans                           &trans         &trans        &trans        &trans        &trans
+                                                        &trans         &trans    &trans  &trans
             >;
         };
     };
