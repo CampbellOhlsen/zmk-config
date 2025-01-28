@@ -21,19 +21,19 @@
 
         Base {
             bindings = <
-&kp Q           &kp W           &kp F             &kp P               &kp B                                     &kp J          &kp L                &kp U                  &kp Y              &kp SEMI
-&kp A           &kp R           &kp S             &kp T               &kp G                                     &kp M          &kp N                &kp E                  &kp I              &kp O
-&mt LEFT_WIN Z  &mt LEFT_ALT X  &mt LEFT_SHIFT C  &mt LEFT_CONTROL D  &kp V                                     &kp K          &mt RIGHT_CONTROL H  &mt RIGHT_SHIFT COMMA  &mt RIGHT_ALT DOT  &mt RWIN SINGLE_QUOTE
-                                                                      &lt 1 TAB  &lt 2 SPACE    &lt 3 KP_ENTER  &kp BACKSPACE
+&kp Q       &kp W           &kp F             &kp P               &kp B                                     &kp J          &kp L                &kp U                  &kp Y              &kp SEMI
+&kp A       &kp R           &kp S             &kp T               &kp G                                     &kp M          &kp N                &kp E                  &kp I              &kp O
+&mt LWIN Z  &mt LEFT_ALT X  &mt LEFT_SHIFT C  &mt LEFT_CONTROL D  &kp V                                     &kp K          &mt RIGHT_CONTROL H  &mt RIGHT_SHIFT COMMA  &mt RIGHT_ALT DOT  &mt RWIN SINGLE_QUOTE
+                                                                  &lt 1 TAB  &lt 2 SPACE    &lt 3 KP_ENTER  &kp BACKSPACE
             >;
         };
 
         Numbers {
             bindings = <
-&none  &kp F7  &kp F8  &kp F9  &kp F12                    &kp LS(UNDER)  &kp N7  &kp N8  &kp N9  &bt BT_SEL 0
-&none  &kp F4  &kp F5  &kp F6  &kp F11                    &kp N0         &kp N4  &kp N5  &kp N6  &bt BT_SEL 1
-&none  &kp F1  &kp F2  &kp F3  &kp F10                    &kp MINUS      &kp N1  &kp N2  &kp N3  &bt BT_CLR_ALL
-                               &trans   &trans    &trans  &trans
+&soft_off    &kp F7  &kp F8  &kp F9  &kp F12                    &kp LS(UNDER)  &kp N7  &kp N8  &kp N9  &bt BT_SEL 0
+&sys_reset   &kp F4  &kp F5  &kp F6  &kp F11                    &kp N0         &kp N4  &kp N5  &kp N6  &bt BT_SEL 1
+&bootloader  &kp F1  &kp F2  &kp F3  &kp F10                    &kp MINUS      &kp N1  &kp N2  &kp N3  &bt BT_CLR_ALL
+                                     &trans   &trans    &trans  &trans
             >;
         };
 
