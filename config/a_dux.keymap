@@ -39,10 +39,10 @@
 
         Navigation {
             bindings = <
-&none  &none  &none  &none  &none                     &none   &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
-&none  &none  &none  &none  &none                     &none   &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT
-&none  &none  &none  &none  &none                     &none   &none     &none      &none      &none
-                            &trans  &trans    &trans  &trans
+&none     &none         &none           &none             &none                     &none   &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
+&none     &none         &none           &none             &none                     &none   &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT
+&kp LWIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &none                     &none   &none     &none      &none      &none
+                                                          &trans  &trans    &trans  &trans
             >;
         };
 
