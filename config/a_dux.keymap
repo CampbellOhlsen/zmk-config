@@ -19,7 +19,7 @@
 
         // This is a sample keymap intended to be replaced with your own
 
-        Base {
+        Letters {
             bindings = <
 &kp Q       &kp W           &kp F             &kp P               &kp B                                     &kp J          &kp L                &kp U                  &kp Y              &kp SEMI
 &kp A       &kp R           &kp S             &kp T               &kp G                                     &kp M          &kp N                &kp E                  &kp I              &kp O
@@ -39,10 +39,10 @@
 
         Navigation {
             bindings = <
-&none     &none         &none           &none             &none                     &none   &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
-&none     &none         &none           &none             &none                     &none   &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT
-&kp LWIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &none                     &none   &none     &none      &none      &none
-                                                          &trans  &trans    &trans  &trans
+&kp ESCAPE  &none         &none           &none             &none                     &none   &kp HOME        &kp PG_UP         &kp PG_DN         &kp END
+&none       &none         &none           &none             &none                     &none   &kp LEFT        &kp UP            &kp DOWN          &kp RIGHT
+&kp LWIN    &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &none                     &none   &kp K_PREVIOUS  &kp K_PLAY_PAUSE  &kp K_PLAY_PAUSE  &kp K_NEXT
+                                                            &trans  &trans    &trans  &trans
             >;
         };
 
