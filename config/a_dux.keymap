@@ -39,10 +39,10 @@
 
         Navigation {
             bindings = <
-&kp ESCAPE  &none         &none           &none             &none                     &none   &kp HOME        &kp PG_UP         &kp PG_DN         &kp END
-&none       &none         &none           &none             &none                     &none   &kp LEFT        &kp UP            &kp DOWN          &kp RIGHT
-&kp LWIN    &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &none                     &none   &kp K_PREVIOUS  &kp K_PLAY_PAUSE  &kp K_PLAY_PAUSE  &kp K_NEXT
-                                                            &trans  &trans    &trans  &trans
+&kp ESCAPE        &kp LG(W)         &kp LG(F)         &kp LS(LG(C))     &kp LG(LS(RETURN))                    &kp LG(J)          &kp HOME        &kp PG_UP         &kp PG_DN         &kp END
+&kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)                      &kp LA(LS(LG(M)))  &kp LEFT        &kp UP            &kp DOWN          &kp RIGHT
+&kp LWIN          &kp LEFT_ALT      &kp LEFT_SHIFT    &kp LEFT_CONTROL  &kp LG(LA(SPACE))                     &kp LG(SPACE)      &kp K_PREVIOUS  &kp K_PLAY_PAUSE  &kp K_PLAY_PAUSE  &kp K_NEXT
+                                                                        &trans              &trans    &trans  &trans
             >;
         };
 
